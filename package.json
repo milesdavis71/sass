@@ -1,0 +1,11 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
