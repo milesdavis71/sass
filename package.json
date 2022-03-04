@@ -2,9 +2,11 @@
   "name": "sass",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "",
+  "scripts": {
+    "compile:sass": "node-sass/main.scss/style.css"
+  },
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1"
   }
