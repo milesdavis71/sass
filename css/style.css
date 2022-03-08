@@ -148,6 +148,7 @@ body {
   left: 0;
   z-index: -1;
   position: absolute;
+  transition: all 0.4s;
 }
 
 .btn-white::after {
@@ -155,10 +156,11 @@ body {
 }
 
 .btn:hover::after {
-  transform: scaleX(2) scaleY(2);
+  transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
 
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
