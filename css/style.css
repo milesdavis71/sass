@@ -2,42 +2,54 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777; }
+  color: #777;
+}
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
 
 .logo-box {
   position: absolute;
   top: 40px;
-  left: 40px; }
+  left: 40px;
+}
 
 .logo {
-  height: 35px; }
+  height: 35px;
+}
 
 .text-box {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+}
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   /* Hack beállítás arra az esetre, ha az animáció
        nem kívánt módon rázkodni kezd. */
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+}
 
 .heading-primary-main {
   display: block;
@@ -49,39 +61,51 @@ body {
     animation-duration: 5s;
     animation-timing-function: ease-in-out;*/
   /* Rövidebb animáció beállítás*/
-  animation: moveInLeft 5s ease-in-out; }
+  animation: moveInLeft 5s ease-in-out;
+}
 
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 18.2px;
-  animation: moveInRight 5s ease-in-out; }
+  animation: moveInRight 5s ease-in-out;
+}
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px); }
+    transform: translateX(-100px);
+  }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px); }
-  80% { }
+    transform: translateX(100px);
+  }
+  80% {
+  }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px); }
+    transform: translateY(30px);
+  }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0);
+  }
+}
 
 .btn:link,
 .btn:visited {
@@ -91,19 +115,23 @@ body {
   display: inline-block;
   border-radius: 100px;
   position: relative;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+}
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 .btn-white {
   background-color: #fff;
-  color: #777; }
+  color: #777;
+}
 
 .btn::after {
   content: '';
@@ -115,14 +143,18 @@ body {
   left: 0;
   z-index: -1;
   position: absolute;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+}
 
 .btn-white::after {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .btn:hover::after {
   transform: scaleX(2) scaleY(2);
-  opacity: 0; }
+  opacity: 0;
+}
 
 .btn-animated {
-  animation: moveInBottom 0.5s ease-out 0.75s; }
+  animation: moveInBottom 0.5s ease-out 0.75s;
+}
