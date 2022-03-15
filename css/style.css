@@ -78,6 +78,21 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem; }
+
+.u-margin-top-big {
+  margin-bottom: 8rem; }
+
+.u-margin-top-huge {
+  margin-bottom: 10rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -169,3 +184,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 50rem; }
