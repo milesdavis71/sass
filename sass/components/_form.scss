@@ -6,8 +6,14 @@
     font-family: inherit;
     padding: 1, 5 rem 2rem;
     border-radius: 2px;
-    background-color: rgba();
+    background-color: rgba($color-white, 0.5);
+    border: none;
   }
+
+  &__input:focus {
+    outline: none;
+  }
+
   &__label {
   }
 }
