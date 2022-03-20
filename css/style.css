@@ -49,15 +49,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
 html {
   /* 1 rem értékének meghatározása */
   font-size: 62.5%; }
-
-@media (max-width: 56.25rem) {
-  font-size: 50%; }
-
-@media (max-width: 75rem) {
-  font-size: 56.25%; }
-
-@media (max-width: 112.5rem) {
-  font-size: 75%; }
+  @media (max-width: 75rem) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25rem) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5rem) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
