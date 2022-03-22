@@ -31,10 +31,10 @@
   }
 
   &--white {
-    background-color: $color-grey-light;
+    background-color: $color-white;
     color: $color-grey-dark;
     &::after {
-      background-color: $color-grey-light;
+      background-color: $color-white;
     }
   }
 

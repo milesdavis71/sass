@@ -76,7 +76,7 @@ body {
   color: #777; }
 
 .heading-primary {
-  color: #fff;
+  color: #f7f7f7;
   text-transform: uppercase;
   /* Hack beállítás arra az esetre, ha az animáció
            nem kívánt módon rázkodni kezd. */
@@ -105,20 +105,30 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
-  letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; }
+  color: transparent;
+  letter-spacing: 0.2rem; }
   @media (max-width: 56.25rem) {
     .heading-secondary {
       font-size: 2.5rem; } }
   @media (max-width: 37.5rem) {
     .heading-secondary {
       font-size: 2rem; } }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .u-center-text {
   text-align: center; }
@@ -182,6 +192,25 @@ body {
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -260,7 +289,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
   /*2 * a column 1 of 3 + egy gutter*/ }
   .row:not(:last-child) {
@@ -270,10 +298,13 @@ body {
     display: table;
     clear: both; }
   .row [class^='col-'] {
-    background-color: orangered;
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25rem) {
+        .row [class^='col-']:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -306,6 +337,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg); }
 
 .section-book {
   padding: 15rem 0;
